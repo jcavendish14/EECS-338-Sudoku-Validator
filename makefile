@@ -1,7 +1,7 @@
-all: threads forks
+all: sv_threads sv_forks
 
-threads:
+sv_threads:
 	gcc -o sv_threads SudokuValidatorThreads.c -lpthread
 
-forks:
+sv_forks:
 	gcc -o sv_forks SudokuValidatorForks.c -lrt
